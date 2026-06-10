@@ -1,0 +1,14 @@
+[project]
+name = "fastapi-app"
+version = "0.1.0"
+description = "My FastAPI Cloud application"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi[standard]",
+]
+
+[tool.uv]
+app = true
+
+[tool.fastapi]
+entrypoint = "main:app"
